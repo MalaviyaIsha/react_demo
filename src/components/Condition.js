@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 const Condition = () => {
-  const [login , setLogin] = useState(true)
+  const [login , setLogin] = useState(1)
   return(
     <div>
-      {login ? <h1>Welcome Max</h1> : <h1>Welcome Guest</h1>}
+      {login === 1 ? <h1>Welcome user 1</h1> : login === 2 ? <h1>Welcome user 2</h1> : <h1>Welcome Guest</h1> }
     </div>
   )
 }
