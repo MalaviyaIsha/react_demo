@@ -14,12 +14,19 @@ import Form from './components/Form';
 import Condition from './components/Condition';
 import PassFunctionProps from './components/PassFunctionProps';
 import Parentcomponent from './components/Parentcomponent';
-import Childcomponent from './components/Childcomponent';
 import ComponentDidMount from './components/lifecycleMethods/ComponentDidMount';
 import ComponentDidUpdate from './components/lifecycleMethods/ComponentDidUpdate';
 import ShouldComponentUpdate from './components/lifecycleMethods/ShouldComponentUpdate';
 import ComponentWillUnmount from './components/lifecycleMethods/ComponentWillUnmount';
 import UseEffectDemo from './components/hooks/UseEffect';
+import StyleType from './components/styleTypes/StyleType';
+import Map from './components/handleArray/Map';
+import NestedList from './components/handleArray/NestedList';
+import ReuseComponent from './components/handleArray/ReuseComponent';
+import Students from './components/handleArray/Students';
+import LiftingState from './components/liftingStateUp/LiftingState';
+import PureComponent from './components/pureComponent/PureClassComponent';
+
 //import WithoutJSX from './components/WithoutJSX.js';
 
 
@@ -51,7 +58,13 @@ function App() {
       <ShouldComponentUpdate />
       <ComponentWillUnmount />
       <UseEffectDemo />
-
+      <StyleType />
+     <Map />
+     <NestedList />
+     <ReuseComponent />
+     <Students />
+     <LiftingState/>
+     <PureComponent />
     </div>
   );
 }
