@@ -37,6 +37,21 @@ import ForwardRefDemo from "./components/hooks/ForwardRef";
 import UncontrolledComponent from "./components/controlledComponent/Uncontrolled";
 import HighOrderComponent from "./components/highOrderComponent/HighOrderComponent";
 import Routing from "./components/routingDemo/Routing";
+import UseEffectList from "./components/hooks/UseEffectWithList";
+import UseMemoDiff from "./components/diff_useeffect_usememo/useMemoDiff";
+import UseEffectDiff from "./components/diff_useeffect_usememo/UseEffectDiff";
+import Counter from "./components/highOrderComponent/Conter";
+import Button from "./components/highOrderComponent/Button";
+//import { Routes , Route } from "react-router-dom";
+import Navbar from "./components/routingDemo/Navbar";
+import Home from "./components/routingDemo/Home";
+import About from "./components/routingDemo/About";
+import RoutesDemo from "./components/routingDemo/RoutesDemo";
+import { BrowserRouter as Router} from "react-router-dom";
+import { UserListRouting } from "./components/routingDemo/UserListRouting";
+import { GetData } from "./components/apiCall/GetData";
+import { ReactMemo } from "./components/reactMemo/ReactMemo";
+
 
 function App() {
   const [name, setName] = useState("Sofy");
@@ -46,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      <Users />
+      {/* <Users />
       <Userclass />
       <Nestedcomponent />
       <Clickevent />
@@ -78,14 +93,33 @@ function App() {
       <LiftingState />
       <PureComponent />
       <UseMemoDemo />
-      <UseMemoPractice />
-      <UseMemoList />
+      <UseMemoPractice />   
       <RefClassComponent />
       <UseRefDemo />
       <ForwardRefDemo />
-      {/* <ControlledComponent/> */}
+      <ControlledComponent/>
       <UncontrolledComponent />
-      <HighOrderComponent />
+      <HighOrderComponent /> */}
+      {/* <UseMemoList /> */}
+      {/* <UseEffectList/> */}
+      {/* <UseMemoDiff/> */}
+      {/* <UseEffectDiff/> */}
+      {/* <Counter/> */}
+      {/* <Button/> */}
+
+      {/* <Navbar/>
+      <Routes>
+        <Route path="/home" element={<Home/>}>
+        </Route>
+        <Route path="/about" element={<About />}>
+        </Route>
+      </Routes>  */}
+      {/* <Routing/>*/}
+        {/* <RoutesDemo /> */}
+    {/* <UserListRouting/> */}
+    <GetData/>
+    {/* <ReactMemo/> */}
+   
     </div>
   );
 }

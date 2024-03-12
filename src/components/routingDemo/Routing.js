@@ -1,15 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route , Routes } from "react-router-dom";
 const Routing = () => {
   return (
     <React.Fragment>
       <Router>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
+        <Link to="/home">Home Page</Link>
+        <Link to="/about">About Page</Link>
+        <Routes>
+          <Route path="/home" element={<Home/>}>
+          </Route>
+          <Route path="/about" element={<About/>}>
+          </Route>
+        </Routes>
+       
       </Router>
     </React.Fragment>
   );
