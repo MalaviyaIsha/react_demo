@@ -47,11 +47,11 @@ import Navbar from "./components/routingDemo/Navbar";
 import Home from "./components/routingDemo/Home";
 import About from "./components/routingDemo/About";
 import RoutesDemo from "./components/routingDemo/RoutesDemo";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { UserListRouting } from "./components/routingDemo/UserListRouting";
 import { GetData } from "./components/apiCall/GetData";
 import { ReactMemo } from "./components/reactMemo/ReactMemo";
-
+import { PostData } from "./components/apiCall/PostData";
 
 function App() {
   const [name, setName] = useState("Sofy");
@@ -61,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Users />
+      <Users />
       <Userclass />
       <Nestedcomponent />
       <Clickevent />
@@ -97,29 +97,21 @@ function App() {
       <RefClassComponent />
       <UseRefDemo />
       <ForwardRefDemo />
-      <ControlledComponent/>
+      {/* <ControlledComponent/> */}
       <UncontrolledComponent />
-      <HighOrderComponent /> */}
-      {/* <UseMemoList /> */}
-      {/* <UseEffectList/> */}
-      {/* <UseMemoDiff/> */}
-      {/* <UseEffectDiff/> */}
-      {/* <Counter/> */}
-      {/* <Button/> */}
-
-      {/* <Navbar/>
-      <Routes>
-        <Route path="/home" element={<Home/>}>
-        </Route>
-        <Route path="/about" element={<About />}>
-        </Route>
-      </Routes>  */}
-      {/* <Routing/>*/}
-        {/* <RoutesDemo /> */}
-    {/* <UserListRouting/> */}
-    <GetData/>
-    {/* <ReactMemo/> */}
-   
+      <HighOrderComponent />
+      <UseMemoList />
+      <UseEffectList/>
+      <UseMemoDiff/>
+      <UseEffectDiff/>
+      <Counter/>
+      <Button/>
+      <Routing/>
+      <RoutesDemo />
+      <UserListRouting/>
+      <GetData />
+      <ReactMemo/>
+      <PostData/>
     </div>
   );
 }
