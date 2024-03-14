@@ -35,7 +35,6 @@ export const GetData = () => {
   };
 
   const updateUser = () => {
-    console.log({title,body,userId})
     let data = { title, body, userId };
     fetch(`https://jsonplaceholder.typicode.com/posts/${userId}`, {
       method: "PUT",
@@ -50,6 +49,7 @@ export const GetData = () => {
       )
       .then((response) => {
         console.log("response:", response)
+        getUsers();
       })
   };
 
