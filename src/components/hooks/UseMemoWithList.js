@@ -11,7 +11,7 @@ const UseMemoList = () => {
   const [count, setCount] = useState(0);
   const [numbers, setNumbers] = useState(nums)
   //const magical = numbers.find((item) => item.isMagical === true )
-  const magical =useMemo(() => numbers.find((item) => item.isMagical === true) , [numbers])
+  const magical = useMemo(() => numbers.find((item) => item.isMagical === true) , [numbers])
   return (
     <React.Fragment>
       <h1>useMemo Demo</h1>
