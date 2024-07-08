@@ -8,7 +8,7 @@ export const CallbackChild = ({ getItems }) => {
 
   return (
     <>
-      <h1>CallbackChild</h1>
+      <h1>CallbackChildgggggg</h1>
       {items.map((item, i) => (
         <div key={i}>{item}</div>
       ))}
